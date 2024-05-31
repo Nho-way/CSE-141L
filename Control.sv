@@ -1,4 +1,6 @@
 // control decoder
+//operand = {"mof":"0000","mov":"0001","lwr":"0111","j":"1001","bne":"1010", "beq":"1011", "str":"1100", "bgt":"1101", "ble":"1110"}
+
 module Control #(parameter opwidth = 3, mcodebits = 4)(
   input [mcodebits-1:0] instr,    // subset of machine code (any width you need)
   output logic RegDst, Branch, 
